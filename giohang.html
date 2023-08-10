@@ -110,12 +110,13 @@
           for (let item of arr)
           {
             console.log(arr);
+            console.log(item.gia);
             var codeSP = `<tr>
                             <td><img style="width: 100px;" src="${item.anh}" alt=""></td>
                             <td>${item.ten}</td>
                             <td><input onchange="tinhThanhTien(${i})" style="width: 40%;" type="number"  value="${item.sl}"></td>
-                            <td>${(item.gia).toLocaleString('vi', {style : 'currency', currency : 'VND'})} </td>
-                            <td>${(item.sl * item.gia).toLocaleString('vi', {style : 'currency', currency : 'VND'})} </td>
+                            <td>${(item.gia)} $</td>
+                            <td>${(item.sl * item.gia)} $</td>
                             <td><button id="xoa" onclick="Xoa(${i})">Xoá</button></td>
                           </tr>`
             document.getElementById('hehe').innerHTML += codeSP;
@@ -156,7 +157,7 @@
           {
             tong += item.gia * item.sl;
           }
-          document.getElementById('tinhTien').innerText = tong.toLocaleString('vi', {style : 'currency', currency : 'VND'});
+          document.getElementById('tinhTien').innerText = tong + "$";
         }
         function xoaAll()
         {

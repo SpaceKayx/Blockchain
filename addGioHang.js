@@ -12,6 +12,7 @@ function muaHang(hihi)
 {
     var ten = document.getElementById('tensp').innerHTML;
     var gia = Number(localStorage.getItem('giaMua'));
+    console.log(gia);
     var sl = Number(document.getElementById('hihi').value);
     var anh = document.getElementById('article').children[0].src;
     var soLw = Number(hihi.parentElement.parentElement.children[1].children[6].children[1].children[0].value);
