@@ -1,0 +1,398 @@
+article{
+    position: relative;
+    height: 375px;
+    width: 1100px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto  ;
+    margin-top: 10px ;
+    top: 80px;
+}
+article a
+{
+    text-decoration: none;
+    
+}
+article div
+{
+    border: 1px solid gray;
+    margin: 0 0px;
+    
+}
+h2
+{
+    margin-left: 10px;
+    padding-top: 10px;
+    color: rgb(98, 97, 97);
+}
+.article1
+{
+    position: absolute;
+    left: 0px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article1 img
+{
+    width: 100px;
+    height: 100px;
+}
+.article1:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article2
+{
+    position: absolute;
+    left: 110px;
+    width: 111px;
+    height: 160px;
+    text-align: center;
+}
+.article2 img
+{
+    width: 100px;
+    height: 100px;
+}
+.article2:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article3
+{
+    position: absolute;
+    left: 220px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article3 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article3:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article4
+{
+    position: absolute;
+    left: 330px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article4 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article4:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article5
+{
+    position: absolute;
+    left: 440px;
+    width: 112px;
+    height: 160px;
+    text-align: center;
+}
+.article5 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article5:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+
+.article6
+{
+    position: absolute;
+    right: 440px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article6 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article6:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article7
+{
+    position: absolute;
+    right: 330px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article7 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article7:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article8
+{
+    position: absolute;
+    right: 220px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article8 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article8:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article9
+{
+    position: absolute;
+    right: 110px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article9 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article9:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article10
+{
+    position: absolute;
+    right: 0px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article10 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article10:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article11
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article11 img
+{
+    width: 100px;
+    height: 100px;
+}
+.article11:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article12
+{
+    position: absolute;
+    bottom: 0px;
+    left: 110px;
+    width: 111px;
+    height: 160px;
+    text-align: center;
+}
+.article12 img
+{
+    width: 100px;
+    height: 100px;
+}
+.article12:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article13
+{
+    position: absolute;
+    bottom: 0px;
+    left: 220px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article13 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article13:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article14
+{
+    position: absolute;
+    bottom: 0px;
+    left: 330px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article14 img
+{
+    width: 95px;
+    height: 100px;
+}
+.article14:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article15
+{
+    position: absolute;
+    bottom: 0px;
+    right: 550px;
+    width: 112px;
+    height: 160px;
+    text-align: center;
+}
+.article15 img
+{
+    width: 100px;
+    height: 100px;
+}
+.article15:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+
+.article16
+{
+    position: absolute;
+    bottom: 0px;
+    right: 440px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article16 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article16:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article17
+{
+    position: absolute;
+    bottom: 0px;
+    right: 330px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article17 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article17:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article18
+{
+    position: absolute;
+    bottom: 0px;
+    right: 220px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article18 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article18:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article19
+{
+    position: absolute;
+    bottom: 0px;
+    right: 110px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article19 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article19:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}
+.article20
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 110px;
+    height: 160px;
+    text-align: center;
+}
+.article20 img
+{
+    width: 110px;
+    height: 100px;
+}
+.article20:hover
+{
+    transform: scale(1.05);
+    transition: .5s;  
+}

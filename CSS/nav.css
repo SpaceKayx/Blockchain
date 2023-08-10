@@ -1,0 +1,274 @@
+nav {
+    height: 400px;
+    width: 1490px;
+    background-color: white;
+    margin: 0 auto;
+    border: 0px solid gray;
+    position: relative;
+    top: 150px;
+}
+
+nav ul li {
+    display: block;
+    display: inline-block;
+    top: 100px;
+}
+
+nav ul {
+    margin-top: 0px;
+}
+
+.nav_bottom {
+    position: relative;
+    top: 470px;
+    right: 290px;
+}
+
+.banner {
+    position: relative;
+    width: 75%;
+    height: 220px;
+    margin: 0 auto;
+    /* background-color: blue; */
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.banner1 {
+    /* position: absolute; */
+    width: 600px;
+    height: 220px;
+}
+
+.banner2 {
+    position: absolute;
+    width: 470px;
+    height: 100px;
+    top: 0px;
+    right: 0px;
+}
+
+.banner3 {
+    position: absolute;
+    width: 470px;
+    height: 100px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.banner4 {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.nav_bottom {
+    position: relative;
+    width: 75%;
+    height: 120px;
+    margin: 0px;
+    top: 0px;
+    left: 186px;
+}
+
+.nav1 {
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    width: 90px;
+
+}
+
+.nav1:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav2 {
+    position: absolute;
+    left: 100px;
+    bottom: 15px;
+    width: 105px;
+}
+
+.nav2 img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav2:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav3 {
+    position: absolute;
+    left: 230px;
+    bottom: 30px;
+    width: 110px;
+}
+
+.nav3 img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav3:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav4 {
+    position: absolute;
+    left: 345px;
+    bottom: 15px;
+    width: 85px;
+    text-align: center;
+}
+
+.nav4 img {
+    /* margin-left: 0px; */
+    width: 50px;
+    height: 50px;
+}
+
+.nav4:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav5 {
+    position: absolute;
+    left: 470px;
+    bottom: 15px;
+    width: 65px;
+}
+
+.nav5 img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav5:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav6 {
+    position: absolute;
+    right: 450px;
+    bottom: 15px;
+    width: 100px;
+}
+
+.nav6 img {
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav6:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav7 {
+    position: absolute;
+    right: 360px;
+    bottom: 15px;
+    width: 75px;
+}
+
+.nav7 img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav7:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav8 {
+    position: absolute;
+    right: 230px;
+    bottom: 33px;
+    width: 110px;
+}
+
+.nav8 img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav8:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav9 {
+    position: absolute;
+    right: 115px;
+    bottom: 15px;
+    width: 110px;
+}
+
+.nav9 img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav9:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.nav10 {
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+    width: 100px;
+}
+
+.nav10 img {
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.nav10:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.wrapper {
+    width: 600px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.box {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    transition: .5s;
+}
+
+.box>div {
+    width: 600px;
+}

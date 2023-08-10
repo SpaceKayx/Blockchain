@@ -1,0 +1,606 @@
+.container{
+    width: 1500px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 0px;
+    position: relative;
+    background-color: rgb(251, 248, 248);
+}
+body
+{
+    margin: 0px;
+    height: auto;
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(-180deg,#f53d2d,#f63);
+    position: relative;
+}
+.anh_header
+{
+    position:relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+header ul li
+{
+    display: block;
+    display: inline-block;
+    
+}
+.top-left
+{
+    width: 380px;
+    height: 30px;
+    position: absolute;
+    left: 100px;
+    bottom: 20px;
+    color: white;
+}
+.top-left li a
+{
+    color: white;
+    font-size: 16px;
+    text-decoration:none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.top-right
+{   
+    /* line-height: 50px; */
+    position:absolute;
+    right: 160px;
+    top: 6px;
+    margin: 0 auto;
+    color: white;
+}
+.top-right li
+{
+    margin: 0 5px;
+}
+.top-right li a
+{
+    
+    color: white;
+    font-size: 16px;
+    text-decoration:none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bottom_header ul
+{
+    /* word-spacing: 5px; */
+    position: absolute;
+    padding-left: 430px;
+    top: 105px;
+    margin: 0px;
+}
+.bottom_header ul li
+{
+    margin: 0 10px;
+}
+.bottom_header ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+nav{
+    height: 120px;
+    width: 1490px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border: 0px solid gray;
+}
+.search {
+    right: 130px;
+    top: 0px;
+    width: 600px;
+    position: relative;
+    display: flex;
+    padding: 0px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    /* right: -1000px; */
+    border: 3px solid #f94c12;
+    /* border-right: none; */
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  .searchTerm:focus{
+    color: black;
+  }
+  
+  .searchButton {
+    position:absolute;
+    top: 0px;
+    right: 1px;
+    width: 60px;
+    height: 48px;
+    border: 1px solid #f94c12;
+    background: #f94c12;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-size: 20px;
+    fill: currentColor;
+  }
+  .searchButton i
+  {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    left: 10px;
+  }
+  
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    transform: translate(-50%, -50%);
+  }
+
+  .logo_shopee
+{
+    position: relative;
+    width: 289px;
+    height: 55px;
+    left: 150px;
+    top: 30px;
+    /* padding-left: 250px; */
+}
+.giohang
+{
+    position: absolute;
+    top: 11px;
+    color: orangered;
+    font-size: 30px;
+    text-decoration: none;
+}
+.logo_shopee img
+{
+    top: 10px;
+    width: 150px;
+    height: 50px;
+
+}
+article{
+    min-height: 500px;
+    width: 75%;
+    background-color: rgb(251, 248, 248);
+
+    margin: 0 auto  ;
+    margin-top: 10px ;
+}
+.form_1
+{
+    width: 1100px;
+    height: 45px;
+    top: 10px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+.form_1 input
+{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 40px;
+}
+.form_1 label
+{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 50px;
+    font-size: 20px;
+
+}
+
+.form_1_1
+{
+    position: absolute;
+    top: 185px;
+    right: 210px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.form_1_1 li
+{
+    display: block;
+    display: inline-block;
+    
+}
+.form_1_1 li
+{
+    margin: 0 50px;
+    text-decoration: none;
+    color:#a2aaa6;
+}
+.form_2
+{
+    width: 1100px;
+    position: absolute;
+    top: 230px;
+    height: 45px;
+    left: 200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+.form_2 input
+{
+    position:absolute;
+    width: 18px;
+    height: 18px;
+    bottom: 8px;
+    left: 40px;
+}
+.form_2 img
+{
+    position: absolute;
+    left: 90px;
+}
+.form_3
+{
+    width: 1100px;
+    position: absolute;
+    top: 283px;
+    height: 100px;
+    left: 200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+.form_3 input
+{
+    position:absolute;
+    width: 18px;
+    height: 18px;
+    top: 38px;
+    left: 40px;
+}
+.form_3 img
+{
+    position: absolute;
+    left: 90px;
+}
+.gia_tien
+{
+    position: absolute;
+    /* height: 80px; */
+    left: 500px;
+    top: 45px;
+    /* margin: 5px 0; */
+}
+.gia_tien del
+{
+  margin-right: 25px;
+}
+.gia_tien_new
+{
+    position: absolute;
+    height: 100px;
+    left: 900px;
+    top: 45px;
+    color: orangered;
+}
+.input_number
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 700px;
+    /* bottom: 50px; */
+    
+}
+.input_number input
+{
+    position: absolute;
+    height: 35px;
+    width: 75px;
+    top: 12px;
+    /* display: flex; */
+    /* left: 1000px; */
+    /* bottom: 0px;
+    border: 0px; */
+}
+ .form_4
+{
+    width: 1100px;
+    position: relative;
+    height: 80px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+.form_4 p
+{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    margin: 0px;
+}
+.xem_voucher
+{
+    position: absolute;
+    left: 320px;
+    top: 30px;
+    text-decoration: none;
+}
+.form_5
+{
+    width: 1100px;
+    position: relative;
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+.form_5 p
+{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    margin: 0px;
+}
+.timhieu
+{
+    position: absolute;
+    left: 410px;
+    top: 17px;
+    text-decoration: none;
+}
+.form_6
+{
+    width: 1100px;
+    position: relative;
+    height: 80px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+}
+.form_6 input
+{
+    position:absolute;
+    width: 18px;
+    height: 18px;
+    top: 38px;
+    left: 40px;
+}
+.form_6_1 a
+{
+    position: absolute;
+    top: 42px;
+    left: 80px;
+    text-decoration: none;
+    color: black;
+}
+.form_6_2 a
+{
+    position: absolute;
+    top: 42px;
+    left: 230px;
+    text-decoration: none;
+    color: black;
+}
+.form_6_3
+{ 
+    position: absolute;
+    top: 42px;
+    right: 465px;
+    font-size: 17px;
+}
+.form_6_4
+{
+    position: absolute;
+    top: 30px;
+    right: 300px;
+    color: red;
+    font-size: 30px;
+}
+.form_6 button
+{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    width: 250px;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+button a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#anhiu
+{
+  width: 200px;
+  position: absolute;
+  top: 200px;
+  left: 650px;
+  height: auto;
+}
+#anhiu p{
+  position: absolute;
+  left: 5px;
+
+  font-size: 20px;
+}
+#anhiu button{
+  position: absolute;
+  left: -52px;
+  bottom: -115px;
+  width: 250px;
+  height: 50px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: orangered;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: acumin-pro, system-ui, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    align-items: start;
+    min-height: 100vh;
+  }
+  
+  footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    padding: 0px;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #999;
+  }
+  
+  .nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: #2f2f2f;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }

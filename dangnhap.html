@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <title>Đăng nhập tài khoản - Mua Và Bán Hàng Trực Tuyến</title>
+    <link rel="stylesheet" href="CSS/article_input.css">
+    <style>
+        .container
+        {
+            position: relative;
+            width: 1500px;
+            height: 800px;
+            background-color: rgb(238, 77, 45);
+            margin: 0 auto;
+        }
+        header
+        {
+            width: 100%;
+            height: 85px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        footer p
+        {
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        body
+        {
+            margin: 0px;
+        }
+        .logo_shopee
+        {
+            position:relative;
+            padding-top: 15px;
+            padding-left: 182px;
+            width: 125px;
+            height: 125px;
+            fill: orangered;
+        }
+        .input
+        {
+            position:relative;
+            bottom: 125px;
+            left: 362px;
+            font-size: 24px;
+            font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+        }
+        .top_right
+        {
+            position: absolute;
+            top: 19.5px;
+            right: 175px;
+            font-size: 14px;
+            color: orangered;
+            font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo_shopee">
+                <img src="image/logo_shopee1.png" alt="">
+            </div>
+            <div class="input">
+                <p> Đăng nhập</p>
+            </div>
+            <div class="top_right">
+                <p>Bạn cần giúp đỡ?</p>
+            </div>
+        </header>
+        <article>
+            <form action="index.html" id="form"  onsubmit="return nhap()">
+                <label for="">Đăng Nhập </label>
+                <input type="text" name="name" class="dangnhap" placeholder="Email/Số điện thoại/ Tên đăng nhập" >
+                <input type="password" name="password" class="matkhau" placeholder=" Mật khẩu" >
+                <button style="cursor: pointer;" class="submit" type="submit">Đăng nhập</button>  
+                <button style="cursor: pointer;" class="fb">
+                    <div>
+                        <img src="image/fb.png" alt="">
+                        <p>Facebook</p>   
+                    </div>
+                </button>
+                <button style="cursor: pointer;" class="gg">
+                    <div>
+                        <img src="image/gugo.png" alt="">
+                        <p>Google</p>   
+                    </div>
+                </button>
+                <button style="cursor: pointer;" class="apple">
+                    <div>
+                        <img src="image/apple.png" alt="">
+                        <p>Apple</p>   
+                    </div>
+                </button>
+                <div class="dangky">
+                    Bạn mới biết đến Shopee? <a href="dangky.html">Đăng ký</a>
+                </div>  
+            </form>
+            <div style="cursor: pointer;" class="shopee">
+                <a href="index.html"><img src="image/shopee.jpg" alt=""></a>
+            </div>
+        </article>
+    </div>
+    <script>
+        var System = JSON.parse(localStorage.getItem('System'));
+        // System.password
+        function nhap()
+        {
+            // var Sys_user = ['spacekayx'];
+            // var Sys_password = [080304];
+            var a = document.getElementById('form');
+            if(a.name.value == '')
+            {
+                alert('Vui lòng nhập Tên đăng nhập');
+                return false;
+            }
+            if(a.password.value == '')
+            {
+                alert('Vui lòng nhập Mật khẩu');
+                return false;
+            }
+            else if(a.name.value != '' && a.password.value != '')
+            {
+                if(a.name.value == System.username && String(a.password.value) == String(System.password))
+                {
+                    alert('Đăng nhập thành công !!');
+                    return true;
+                }
+                else
+                {
+                    alert('Sai tên đang nhập hoặc mật khẩu');
+                    return false;
+                }
+                
+            }
+
+        }
+    </script>
+    <footer>
+        <p>Nguyễn Mẩn Đạt PS30042</p>
+    </footer>
+</body>
+</html>

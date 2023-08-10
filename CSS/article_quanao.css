@@ -1,0 +1,161 @@
+article {
+  height: 900px;
+  width: 75%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#hihi {
+  position: relative;
+  top: 200px;
+}
+
+.article__aokhoac {
+  height: 500px;
+  width: 70%;
+  background-color: azure;
+  float: left;
+}
+
+.col-25 {
+  width: 25%;
+  float: left;
+}
+
+.prod {
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  border: 1px solid;
+}
+
+.prod>.name {
+  font-variant: small-caps;
+  color: gainsboro;
+}
+
+.prod>.image {
+  max-width: 98%;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.prod>.price {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  font-family: Impact;
+  font-size: 25px;
+  color: orange;
+}
+
+.text {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  margin: 0px;
+  height: 190px;
+  border-collapse: collapse;
+}
+
+tr>td {
+  border: 2px solid gray;
+  padding: 10px;
+  width: 80px;
+}
+
+.table__anh1 {
+  height: 200px;
+  width: 300px;
+}
+
+.whole {
+  width: 280px;
+  height: 400px;
+  float: left;
+
+
+}
+
+.whole:hover {
+  transform: scale(1.05);
+  transition: .5s;
+
+
+}
+
+.picture {
+  position: absolute;
+  padding: 1px;
+
+
+}
+
+.name {
+  padding-left: 10px;
+
+  padding-top: 250px;
+
+
+}
+
+.sale {
+  background: orange;
+  width: 50px;
+  height: 30px;
+  margin: -290px 200px;
+  position: absolute;
+  color: #E63F00;
+  text-align: center;
+}
+
+.shopee {
+  background: #FF5511;
+  color: white;
+  position: absolute;
+  margin-top: -260px;
+  padding: 5px;
+}
+
+.price span {
+  display: block;
+
+  float: left;
+  margin: 8px;
+}
+
+.saleprice {
+  color: #FF5511;
+
+
+}
+
+.original {
+  color: gray;
+  text-decoration: line-through;
+
+}
+
+.fleft {
+  margin-left: -90px;
+  margin-top: 70px;
+  padding: 10px;
+  float: left;
+  color: #AAAAAA;
+}
+
+.fright {
+  float: left;
+  margin-top: 70px;
+  padding: 10px;
+  margin-left: 50px;
+  color: #AAAAAA;
+}

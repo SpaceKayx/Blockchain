@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+  <title>Shopee Việt Nam | Mua Và Bán Hàng Trực Tuyến</title>
+  <!-- <link rel="stylesheet" href="CSS/header.css"> -->
+  <link rel="stylesheet" href="CSS/style_giohang.css">
+  <style>
+    #cart{
+      position: relative;
+      border: 1px solid rgb(244, 244, 244);
+        width: 1100px;
+        /* height: 50px; */
+        /* color: white; */
+
+    }
+    #cart td, #cart th{
+      border: 1px solid rgb(255, 255, 255);
+      text-align: center;
+    }
+    #cart button{
+      cursor: pointer;
+    }
+    #cart input{
+      border: 1px solid rgb(0, 0, 0);
+    }
+    #xoa{
+      width: 40px;
+      height: 30px;
+      top: 85px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body onload="hiengiohang()">
+  <div class="container">
+    <header>
+      <div class="top-left">
+        <ul>
+          <li><a href="">Kênh Người Bán </a></li> |
+          <li><a href="">Tải ứng dụng</a></li> |
+          <li><a href="https://www.facebook.com/space.kayx2">Kết nối <img class="anh_header" src="image/fb.png" alt="">
+              <img class="anh_header" src="image/ins.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="top-right">
+          <li><a href=""> <img class="anh_header" src="image/thongbao.png" alt=""> Thông Báo</a></li>
+          <li><a href=""><img class="anh_header" src="image/chamhoi.png" alt=""> Hỗ Trợ</a></li>
+          <li><a href=""><img class="anh_header" src="image/diacau.png" alt=""> Tiếng Việt</a></li>
+          <li><a href="dangky.html">Đăng Ký</a></li> |
+          <li><a href="dangnhap.html">Đăng Nhập</a></li>
+        </ul>
+      </div>
+    </header>
+    <nav>
+      <div class="logo_shopee">
+        <a href="index.html"><img src="image/logo_shopee1.png" alt=""></a>
+        <a class="giohang" href="">| Giỏ hàng</a>
+      </div>
+      <div class="wrap">
+        <form class="search">
+          <input type="text" class="searchTerm" placeholder="ShopeePay Day Bay Ngay Nửa Giá">
+          <button type="submit" class="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <article>
+      <table id="cart" border="1" cellspacing="0" , cellpadding="10" , align="center" style="background-color: white; min-height: 300px;">
+        <thead>
+          <tr>
+            <th style="width: 15%;">Ảnh</th>
+            <th>Tên</th>
+            <th style="width: 15%;">Số Lượng</th>
+            <th style="width: 20%;">Giá</th>
+            <th style="width: 15%;">Thành Tiền</th>
+            <th style="width: 10%;">Xoá</th>
+          </tr>
+
+        </thead>
+        <tbody id="hehe">
+          
+        </tbody>
+        
+      </table>
+      <div style="display: none;" id="anhiu">
+        <img style="width: 150px" src="image/giohang_null.png" alt="">
+        <p>Giỏ hàng trống</p>
+        <button style=" cursor: pointer;"><a href="index.html">Mua Hàng</a></button>
+      </div>
+      <script>
+        var arr = JSON.parse(localStorage.getItem("gioHang"));
+        function hiengiohang() 
+        {
+          // Joson.parse đổi từ text sang mảng
+          var i = 0 ;
+          document.getElementById('hehe').innerHTML = '';
+                // onsubmit="return soluong()"
+          for (let item of arr)
+          {
+            console.log(arr);
+            var codeSP = `<tr>
+                            <td><img style="width: 100px;" src="${item.anh}" alt=""></td>
+                            <td>${item.ten}</td>
+                            <td><input onchange="tinhThanhTien(${i})" style="width: 40%;" type="number"  value="${item.sl}"></td>
+                            <td>${(item.gia).toLocaleString('vi', {style : 'currency', currency : 'VND'})} </td>
+                            <td>${(item.sl * item.gia).toLocaleString('vi', {style : 'currency', currency : 'VND'})} </td>
+                            <td><button id="xoa" onclick="Xoa(${i})">Xoá</button></td>
+                          </tr>`
+            document.getElementById('hehe').innerHTML += codeSP;
+            i++;
+            console.log(arr)
+          }
+          setInterval(()=>{
+            if (arr.length > 0 )
+            {
+              
+              document.getElementById('anhiu').style.display = 'none';
+            }
+            else
+            {
+              document.getElementById('anhiu').style.display = 'block';
+            }
+          },1);
+          
+          tinhTien();
+        }
+        function tinhThanhTien(index)
+        {
+          for (let item of arr)
+          {
+            arr[index].sl = event.target.value;
+            hiengiohang();
+          }
+        }
+        function Xoa(index)
+        {
+            arr.splice(index,1);
+            localStorage.setItem("gioHang", JSON.stringify(arr));
+            hiengiohang();
+        }
+        function tinhTien() {
+          var tong = 0 ;
+          for (let item of arr)
+          {
+            tong += item.gia * item.sl;
+          }
+          document.getElementById('tinhTien').innerText = tong.toLocaleString('vi', {style : 'currency', currency : 'VND'});
+        }
+        function xoaAll()
+        {
+          arr =[];
+          localStorage.setItem("gioHang", JSON.stringify(arr));
+          hiengiohang();
+        }
+      </script>
+      
+      <div class="form_4">
+        <p> <img src="image/voucher.png" alt=""> Shop voucher giảm đến 5k <img src="image/voucher1.png" alt=""></p>
+        <a class="xem_voucher" href="">Xem thêm voucher</a>
+      </div>
+      <div class="form_5">
+        <p> <img src="image/xetai.png" alt="">Giảm ₫40.000 phí vận chuyển đơn tối thiểu ₫0</p>
+        <a class="timhieu" href="">Tìm hiểu thêm</a>
+      </div>
+      <form class="form_6">
+        <input type="checkbox">
+        <label class="form_6_1" for=""> <a> Chọn Tất Cả (1)</a></label>
+        <label class="form_6_2" for=""> <a onclick="xoaAll()"> Xóa hết</a></label>
+        <label class="form_6_3" for=""> Tổng thanh toán: </label>
+        <label class="form_6_4" id="tinhTien"></label>
+        <button class="mua"> <a href=""> Mua hàng</a></button>
+      </form>
+    </article>
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Shopee</h1>
+
+        <h2>Address</h2>
+
+        <address>
+
+          ĐC: Nguyễn Văn Lượng, Quận Gò vấp, TP Hồ Chí Minh<br>
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Thiết bị điện tử</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">laptop</a>
+            </li>
+
+            <li>
+              <a href="#">Phone</a>
+            </li>
+
+            <li>
+              <a href="#">Tv</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Quần áo</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#"></a>
+            </li>
+
+            <li>
+              <a href="#">Thời trang nam</a>
+            </li>
+
+            <li>
+              <a href="#">Thời trang nữ</a>
+            </li>
+
+            <li>
+              <a href="#">Quần áo trẻ con</a>
+            </li>
+
+            <li>
+              <a href="#">áo khoác</a>
+            </li>
+
+            <li>
+              <a href="#">quần kaki</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">mỹ phẩm</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">son môi</a>
+            </li>
+
+            <li>
+              <a href="#">kem chống nắng</a>
+            </li>
+
+            <li>
+              <a href="#">mặt nạ</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2023 Something. All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

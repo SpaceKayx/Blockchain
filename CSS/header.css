@@ -1,0 +1,187 @@
+header{
+    width: 1500px;
+    height: 125px;
+    background: linear-gradient(-180deg,#f53d2d,#f63);
+    position: relative;
+    position: fixed;
+    z-index: 100;
+}
+.anh_header
+{
+    position:relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+header ul li
+{
+    display: block;
+    display: inline-block;
+    
+}
+.top-left{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.top-left ul
+{
+    padding-left: 220px;
+    /* padding-top: 10px; */
+    color: white;
+}
+.top-left li a
+{
+    color: white;
+    font-size: 16px;
+    text-decoration:none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.top-right
+{
+    position:absolute;
+    right: 220px;
+    bottom: 78px;
+    color: white;
+}
+/* .top-right li
+{
+    margin: 0 5px;
+} */
+.top-right li a
+{
+    
+    color: white;
+    font-size: 16px;
+    text-decoration:none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo_shopee
+{
+    padding-left: 250px;
+}
+.logo_shopee img
+{
+    
+    bottom: 100px;
+    width: 150px;
+    height: 50px;
+
+}
+.giohang a
+{
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+.thongbao
+{
+    width: 15px;
+    height: 10px;
+    color: white;
+    fill: currentColor;
+}
+.anh_shopee
+{
+    
+    width: 200px;
+    height: 50px;
+    fill: #fff;
+
+}
+.logo_search
+{
+    width: 50px;
+    height: 30px;
+    top: 9px;
+    right: 20px;
+    position:absolute;
+}
+.giohang
+{
+    position:absolute;
+    top: 55px;
+    right: 320px;
+    width: 30px;
+    height: 30px;
+    /* fill: currentColor; */
+}
+form
+{
+    position:absolute;
+    padding-left: 250px;
+    top: 55px;
+}
+.bottom_header ul
+{
+    /* word-spacing: 5px; */
+    position: absolute;
+    padding-left: 430px;
+    top: 105px;
+    margin: 0px;
+}
+.bottom_header ul li
+{
+    margin: 0 10px;
+}
+.bottom_header ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+.search {
+    right: 100px;
+    top: 0px;
+    width: 700px;
+    position: relative;
+    display: flex;
+    padding: 0px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    /* right: -1000px; */
+    border: 3px solid #f94c12;
+    /* border-right: none; */
+    padding: 5px;
+    height: 45px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    
+  }
+  
+  .searchTerm:focus{
+    color: black;
+  }
+  
+  .searchButton {
+    position:absolute;
+    top: 6px;
+    right: 5px;
+    width: 50px;
+    height: 35px;
+    border: 1px solid #f94c12;
+    background: #f94c12;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-size: 20px;
+    fill: currentColor;
+  }
+  .searchButton i
+  {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    left: 10px;
+  }
+  
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 70px;
+    left: 750px;
+    transform: translate(-50%, -50%);
+  }
+
